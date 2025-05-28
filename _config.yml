@@ -1,0 +1,9 @@
+title: Dušan Paun
+description: DevOps Engineer
+baseurl: ""
+url: "https://dusanpaun.com"
+markdown: kramdown
+theme: null
+exclude: ["README.md"]
+plugins:
+  - jekyll-sitemap

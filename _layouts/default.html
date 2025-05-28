@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }} - {{ site.title }}</title>
+  <link rel="stylesheet" href="{{ '/css/style.css' | relative_url }}">
+  <link rel="icon" type="image/svg+xml" href="https://api.iconify.design/mdi:rocket.svg?color=%230070f3" />
+</head>
+<body>
+  <header>
+    <nav>
+      <ul class="nav-menu">
+        <li><a href="{{ '/' | relative_url }}">Home</a></li>
+        <li><a href="{{ '/posts' | relative_url }}">Blog</a></li>
+        <li><a href="{{ '/book-review' | relative_url }}">Book Review</a></li>
+        <li><a href="{{ '/contact' | relative_url }}">Contact</a></li>
+      </ul>
+    </nav>
+    <h1>{{ page.header | default: site.title }}</h1>
+    {% if page.subheader %}
+      <p>{{ page.subheader }}</p>
+    {% endif %}
+  </header>
+  <main>
+    {{ content }}
+  </main>
+  <footer>
+    &copy; {{ site.time | date: "%Y" }} Dušan Paun
+  </footer>
+</body>
+</html>

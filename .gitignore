@@ -1,0 +1,25 @@
+# Jekyll output
+_site/
+.jekyll-cache/
+.sass-cache/
+
+# Bundler
+.bundle/
+vendor/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs and temp files
+*.log
+*.tmp
+
+# Ruby
+Gemfile.lock
+
+# Node
+node_modules/
+
+# Byebug command history
+.byebug_history
