@@ -145,6 +145,24 @@ aside.linkfloater hr {
     background: var(--accent);
     color: #fff;
 }
+.nav-menu .social-icons {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-left: 1.5rem;
+}
+.nav-menu .social-icons a {
+  color: #b0b8c1; /* default icon color */
+  background: none;
+  transition: background 0.2s, color 0.2s;
+}
+.nav-menu .social-icons a:hover {
+  background: var(--accent);
+  color: #fff; /* all icons turn white on hover */
+}
+.nav-menu .social-icons svg {
+  display: block;
+}
 
 /* Blog grid layout */
 .blog-list {
