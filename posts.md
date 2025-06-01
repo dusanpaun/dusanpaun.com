@@ -2,7 +2,6 @@
 layout: default
 title: Blog
 header: Blog
-subheader: My latest posts
 ---
 
 <div class="blog-list">

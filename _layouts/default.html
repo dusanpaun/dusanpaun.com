@@ -11,9 +11,18 @@
   <header>
     <nav>
       <ul class="nav-menu">
-        <li><a href="{{ '/' | relative_url }}">Home</a></li>
-        <li><a href="{{ '/posts' | relative_url }}">Blog</a></li>
-        <li><a href="{{ '/book-review' | relative_url }}">Book Review</a></li>
+        <li>
+          <a href="{{ '/' | relative_url }}"{% if page.url == '/' or page.url == '/index.html' %} class="active"{% endif %}>Home</a>
+        </li>
+        <li>
+          <a href="{{ '/posts' | relative_url }}"{% if page.url contains '/posts' %} class="active"{% endif %}>Blog</a>
+        </li>
+        <li>
+          <a href="{{ '/book-review' | relative_url }}"{% if page.url contains '/book-review' %} class="active"{% endif %}>Book Review</a>
+        </li>
+        <li>
+          <a href="{{ '/about' | relative_url }}"{% if page.url contains '/about' %} class="active"{% endif %}>About</a>
+        </li>
         <li class="social-icons">
           <a href="mailto:dusan.paun@zohomail.eu" title="Email" rel="noopener">
             <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
