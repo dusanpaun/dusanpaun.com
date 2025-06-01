@@ -125,12 +125,13 @@ aside.linkfloater hr {
     list-style: none;
     display: flex;
     justify-content: center;
+    align-items: center; /* add this for vertical centering */
     gap: 2rem;
     padding: 0;
     margin: 0 0 1rem 0;
 }
 .nav-menu li {
-    display: inline;
+    /* Remove: display: inline; */
 }
 .nav-menu a {
     color: var(--text-main);
@@ -240,6 +241,30 @@ aside.linkfloater hr {
 .post-tags .tag:hover {
   background: var(--accent);
   color: #fff;
+}
+
+.footer-social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.7rem;
+  margin-bottom: 0.5rem;
+}
+.footer-social-icons a {
+  color: #b0b8c1;
+  background: none;
+  border-radius: 50%;
+  padding: 0.15rem;
+  transition: background 0.2s, color 0.2s;
+  display: inline-flex;
+  align-items: center;
+}
+.footer-social-icons a:hover {
+  background: var(--accent);
+  color: #fff;
+}
+.footer-social-icons svg {
+  display: block;
 }
 
 @media (max-width: 1100px) {
