@@ -15,7 +15,7 @@
           <a href="{{ '/' | relative_url }}"{% if page.url == '/' or page.url == '/index.html' %} class="active"{% endif %}>Home</a>
         </li>
         <li>
-          <a href="{{ '/posts' | relative_url }}"{% if page.url contains 'posts' %} class="active"{% endif %}>Blog</a>
+          <a href="{{ '/posts' | relative_url }}"{% if page.url contains '/posts' %} class="active"{% endif %}>Blog</a>
         </li>
         <li>
           <a href="{{ '/book-review' | relative_url }}"{% if page.url contains '/book-review' %} class="active"{% endif %}>Book Review</a>
